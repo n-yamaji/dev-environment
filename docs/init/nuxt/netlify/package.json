@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "build": "yarn build:client && yarn build:server",
+        "build:client": "nuxt build",
+        "build:server": "netlify-lambda build functions",
+        "start": "nuxt start",
+        "start:server": "netlify-lambda serve functions",
+    },
+}
