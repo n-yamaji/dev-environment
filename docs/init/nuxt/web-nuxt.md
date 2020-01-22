@@ -2,7 +2,7 @@
 ## setup Nuxt
 ```
 cd {repository}
-create-nuxt-app {project-name}
+npx create-nuxt-app {project-name}
 ncu
 ncu -u
 
@@ -35,6 +35,10 @@ yarn add @types/nuxtjs__auth --dev
 ## setup Airtable
 ```
 yarn add airtable
+
+# option
+yarn add --dev @types/airtable
+
 git add .
 git commit -m "airtable"
 git push
@@ -43,12 +47,28 @@ git push
 ## setup TypeScript
 ```
 yarn add --dev @nuxt/typescript-build
-yarn add -D @nuxtjs/eslint-config-typescript
+yarn add -dev @nuxtjs/eslint-config-typescript
 
 # nuxt.config.js
 # tsconfig.json
 # .eslintrc.js
 # package.json
+
+git add .
+git commit -m "typescript"
+git push
+```
+
+## setup DDD
+```
+mkdir domain
+mkdir domain/example
+touch domain/example/Example.ts
+touch domain/example/ExampleRepository.ts
+
+git add .
+git commit -m "ddd"
+git push
 ```
 
 # ディレクトリ構成
