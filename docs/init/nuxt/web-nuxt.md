@@ -59,6 +59,17 @@ git commit -m "typescript"
 git push
 ```
 
+## setup Date
+https://github.com/nuxt-community/date-fns-module
+
+```
+yarn add --dev @nuxtjs/date-fns
+
+git add .
+git commit -m "date-fns"
+git push
+```
+
 ## setup DDD
 ```
 mkdir domain
