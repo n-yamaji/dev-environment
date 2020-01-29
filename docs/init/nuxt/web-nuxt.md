@@ -12,6 +12,21 @@ git remote add origin git@github.com:n-yamaji/{project-name}.git
 git push -u origin master
 ```
 
+## setup TypeScript
+```
+yarn add --dev @nuxt/typescript-build
+yarn add -dev @nuxtjs/eslint-config-typescript
+
+# nuxt.config.js
+# tsconfig.json
+# .eslintrc.js
+# package.json
+
+git add .
+git commit -m "typescript"
+git push
+```
+
 ## setup Netlify
 ```
 # netlify.toml
@@ -41,21 +56,6 @@ yarn add --dev @types/airtable
 
 git add .
 git commit -m "airtable"
-git push
-```
-
-## setup TypeScript
-```
-yarn add --dev @nuxt/typescript-build
-yarn add -dev @nuxtjs/eslint-config-typescript
-
-# nuxt.config.js
-# tsconfig.json
-# .eslintrc.js
-# package.json
-
-git add .
-git commit -m "typescript"
 git push
 ```
 
