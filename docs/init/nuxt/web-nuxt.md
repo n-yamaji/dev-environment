@@ -31,8 +31,10 @@ git push
 ```
 # netlify.toml
 
-yarn add netlify-lambda -D
-yarn add concurrently -D
+mkdir functions
+
+yarn add --dev netlify-lambda
+yarn add --dev concurrently
 
 git add .
 git commit -m "netlify"
