@@ -36,6 +36,9 @@ mkdir functions
 yarn add --dev netlify-lambda
 yarn add --dev concurrently
 
+yarn add --dev @types/aws-lambda
+yarn add --dev @babel/preset-typescript
+
 git add .
 git commit -m "netlify"
 git push
