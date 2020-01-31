@@ -102,6 +102,16 @@ git commit -m "ddd"
 git push
 ```
 
+## setup Jest
+```
+yarn add --dev ts-jest
+yarn add --dev @types/jest
+
+git add .
+git commit -m "jest"
+git push
+```
+
 # ディレクトリ構成
 - {projectName}
   - .nuxt
