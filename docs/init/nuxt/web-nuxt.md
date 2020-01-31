@@ -46,10 +46,25 @@ git push
 
 ## setup Auth0
 ```
-yarn add @nuxtjs/auth@4.7.0 --exact
-yarn add @types/nuxtjs__auth --dev
+yarn add --exact @nuxtjs/auth@4.7.0
+yarn add --dev @types/nuxtjs__auth
 
 # nuxt.config.js
+# tsconfig.json
+# middleware/auth.js
+# pages/callback.vue
+# pages/login.vue
+# store/index.js
+
+# Auth0での設定
+# Allowed Callback URLs: http://localhost:3000/callback
+# Allowed Web Origins: http://localhost:3000
+# Allowed Logout URLs: http://localhost:3000
+
+# Googleでの認証設定
+# https://dev.classmethod.jp/server-side/auth0/auth0-google/
+
+
 ```
 
 ## setup Airtable
