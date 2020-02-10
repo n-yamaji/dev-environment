@@ -41,7 +41,7 @@ npx ionic init
 npm install -D ionicons@4.5.9-1
 
 npm run build
-npx ionic capacitor copy
+npx cap copy
 
 # ios
 npx cap add ios
