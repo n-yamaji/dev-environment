@@ -34,17 +34,24 @@ git push -u origin master
 
 ## setup Ionic
 ```
-npm install
+npx ionic init
+# Project name: {project-name}
 
+# fix: "export 'ICON_PATHS' was not found in 'ionicons/icons'
+npm install -D ionicons@4.5.9-1
 
-ionic init
-ionic capacitor copy
 npm run build
+npx ionic capacitor copy
 
+# ios
 npx cap add ios
 npx cap open ios
 cd ios/App
 pod install
+cd ../../
+
+# todo: android
+
 
 git add .
 git commit -m "ionic"
