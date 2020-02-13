@@ -40,6 +40,18 @@ npx ionic init
 # fix: "export 'ICON_PATHS' was not found in 'ionicons/icons'
 npm install -D ionicons@4.5.9-1
 
+# bluetooth
+npm install @ionic-native/core
+
+## https://ionicframework.com/jp/docs/native/bluetooth-le
+npm install @ionic-native/bluetooth-le
+npm install cordova-plugin-bluetoothle
+
+## https://ionicframework.com/docs/v3/native/ble/
+#npm install @ionic-native/ble
+#npm install cordova-plugin-ble-central
+
+npx cap sync
 npm run build
 npx cap copy
 
