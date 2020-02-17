@@ -3,8 +3,10 @@
 ```
 cd {repository}
 npx create-nuxt-app {project-name}
+code {project-name}
 ncu
 ncu -u
+npm install
 
 git add .
 git commit -m "first commit"
