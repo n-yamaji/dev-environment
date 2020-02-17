@@ -17,7 +17,7 @@ git push -u origin master
 ## setup TypeScript
 ```
 yarn add --dev @nuxt/typescript-build
-yarn add -dev @nuxtjs/eslint-config-typescript
+yarn add --dev @nuxtjs/eslint-config-typescript
 
 # nuxt.config.js
 # tsconfig.json
