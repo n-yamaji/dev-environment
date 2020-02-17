@@ -30,6 +30,8 @@ git push
 ## setup Netlify
 ```
 # netlify.toml
+# nuxt.config.js
+# package.json
 
 mkdir functions
 

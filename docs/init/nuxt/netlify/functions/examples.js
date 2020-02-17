@@ -4,6 +4,6 @@ exports.handler = (event, context, callback) => {
     headers: {
       'Content-type': 'application/json'
     },
-    body: JSON.stringify(contacts)
+    body: JSON.stringify({ example: 'yes' })
   })
 }
