@@ -73,3 +73,38 @@ yarn add --dev ts-node-dev
       "crawl2": "npx ts-node-dev --respawn src/index2.ts"
    }
 ```
+
+## setup Tor Proxy
+参考
+- https://hub.docker.com/r/dperson/torproxy/
+
+``` docker-compose.yml
+version: '3'
+
+services:
+  proxy:
+    image: dperson/torproxy
+    ports:
+      - "8118:8118"
+```
+
+### Tor + AxiosでのHTTPリクエスト
+```
+yarn add axios https-proxy-agent
+yarn add --dev @types/axios
+```
+
+``` idnex.ts
+import Axios from 'axios'
+import { HttpsProxyAgent } from 'https-proxy-agent'
+
+const httpClient = Axios.create(
+    { 
+        httpsAgent: new HttpsProxyAgent('http://localhost:8118'), 
+        proxy: false, 
+        validateStatus: (_) => true 
+    }
+)
+
+httpClient.get('https://google.com')
+```
