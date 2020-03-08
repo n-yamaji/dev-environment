@@ -42,3 +42,19 @@ yarn-error.log*
 ```
 
 ## setup TypeScript
+
+## setup Crawler
+```
+yarn add axios https-proxy-agent jsdom
+yarn add --dev @types/axios @types/jsdom
+
+yarn add --dev ts-node-dev
+```
+
+```
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "crawl": "npx ts-node-dev src/index.ts",
+      "crawl2": "npx ts-node-dev --respawn src/index2.ts"
+   }
+```
