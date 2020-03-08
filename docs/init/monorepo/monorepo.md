@@ -42,6 +42,21 @@ yarn-error.log*
 ```
 
 ## setup TypeScript
+```
+mkdir {package}
+cd {package}
+
+yarn add --dev typescript @types/node ts-node ts-node-dev
+npx tsc --init
+
+mkdir src
+touch src/index.ts
+
+git add .
+git commit -m "typescript"
+
+```
+
 
 ## setup Crawler
 ```
