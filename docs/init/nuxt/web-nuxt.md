@@ -6,7 +6,7 @@ npx create-nuxt-app {project-name}
 code {project-name}
 ncu
 ncu -u
-npm install
+yarn install
 
 git add .
 git commit -m "first commit"
