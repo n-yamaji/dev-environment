@@ -4,8 +4,8 @@
 cd {repository}
 npx --ignore-existing create-nuxt-app {project-name}
 code {project-name}
-ncu
-ncu -u
+npx npm-check-updates
+npx npm-check-updates -u
 yarn install
 
 git add .
