@@ -2,7 +2,7 @@
 ## setup Nuxt
 ```
 cd {repository}
-npx create-nuxt-app {project-name}
+npx --ignore-existing create-nuxt-app {project-name}
 code {project-name}
 ncu
 ncu -u
