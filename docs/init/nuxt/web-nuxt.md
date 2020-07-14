@@ -1,3 +1,9 @@
+# environment init
+```
+brew install nodebrew
+nodebrew install-binary latest
+```
+
 # project init
 ## setup Nuxt
 ```
