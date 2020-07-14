@@ -103,6 +103,16 @@ git commit -m "jest"
 git push
 ```
 
+## setup Bluetooth
+```
+yarn add --dev @types/web-bluetooth
+# tsconfig.json
+
+git add .
+git commit -m "web bluetooth"
+git push
+```
+
 # ディレクトリ構成
 - {projectName}
   - .nuxt
