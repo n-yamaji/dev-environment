@@ -41,6 +41,20 @@ git commit -m "netlify"
 git push
 ```
 
+## setup Firebase
+```
+# https://firebase.nuxtjs.org/guide/getting-started/#requirements
+yarn add firebase
+yarn add @nuxtjs/firebase
+
+# Nuxtの型が解決できなければ
+yarn add @nuxt@types --dev
+
+# nuxt.config.js
+# tsconfig.json
+
+```
+
 ## setup Auth0
 ```
 yarn add --exact @nuxtjs/auth@4.7.0
