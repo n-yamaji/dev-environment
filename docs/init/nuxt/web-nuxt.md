@@ -160,3 +160,82 @@ git push
 # UI Framework
 - Vuetify
 - Ant Design Vue
+
+# TIPS
+## Firebase
+### Get
+```
+async asyncData({ app }) {
+  // ルートコレクションを指定
+  const todosCollection = app.$fireStore.collection('todos')
+
+  // スナップショットを取得
+  const todosSnapshot = await todosCollection.limit(100).get()
+
+  // ドキュメントを変換
+  const todos = todosSnapshot.docs.map((doc) => {
+    // ドキュメントをデータに変換
+    const todo = doc.data()!
+    return {
+      id: doc.id,
+      hoge: todo.hoge,
+      fuga: todo.fuga,
+    }
+  })
+
+  return {
+    todos,
+  }
+},
+```
+
+### Post
+```
+methods: {
+  async add() {
+    // ルートコレクションを指定
+    const todosCollection = this.$fireStore.collection('todos')
+
+    // ドキュメントを追加
+    await todosCollection.add({ fuga: this.newFuga, hoge: this.newHoge })
+  },
+},
+```
+
+### Put
+```
+methods: {
+  async update() {
+    // ルートコレクションを指定
+    const todosCollection = this.$fireStore.collection('todos')
+
+    // ドキュメントを追加
+    const todoDoc = await todos.doc('VxrTg1VAal1lc7vDdrHb').get()
+
+    // ドキュメントを更新
+    await todoDoc.ref.set({ fuga: this.fuga, hoge: this.hoge })
+  },
+},
+```
+
+### Subscribe
+```
+mounted() {
+  // ルートコレクションを指定
+  const todosCollection = this.$fireStore.collection('todos')
+
+  // 変更の検知
+  todosCollection.onSnapshot((snapshot) => {
+    const todos = snapshot.docs.map((doc) => {
+      const todo = doc.data()!
+      return {
+        id: doc.id,
+        hoge: todo.hoge as string,
+        fuga: todo.fuga as string,
+      }
+    })
+    
+    this.todos = todos
+  })
+},
+```
