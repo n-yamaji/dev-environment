@@ -1,4 +1,5 @@
 # project init
 ```
-composer create-project --prefer-dist laravel/laravel {projectName} "{major.minor.patch}"
+curl -s https://laravel.build/<YOUR_PROJECT_NAME> | bash
+cd <YOUR_PROJECT_NAME> && ./vendor/bin/sail up
 ```
