@@ -8,7 +8,7 @@ nodebrew install-binary latest
 ## setup Nuxt
 ```
 cd {repository}
-npx --ignore-existing create-nuxt-app {project-name}
+yarn create nuxt-app {project-name}
 code {project-name}
 npx npm-check-updates
 npx npm-check-updates -u
@@ -22,7 +22,7 @@ git remote add origin git@github.com:n-yamaji/{project-name}.git
 git push -u origin master
 ```
 
-## setup Netlify
+## setup Netlify Function
 ```
 # netlify.toml
 # nuxt.config.js
@@ -53,6 +53,9 @@ yarn add @nuxt@types --dev
 # nuxt.config.js
 # tsconfig.json
 
+git add .
+git commit -m "firebase"
+git push
 ```
 
 ## setup Auth0
